@@ -123,7 +123,14 @@ func Split(raw string) (result []FormattedSubstring) {
 			if matches := colorForeBackRe.FindStringSubmatch(raw); len(matches) != 0 {
 				chunk.ForegroundColor = ParseColor(matches[1])
 				chunk.BackgroundColor = ParseColor(matches[2])
-				raw = raw[len(matches[0]):]
+				// JM edit
+				// if back and fore colors are the same, replace the next character with a space
+				if chunk.ForegroundColor.Value == chunk.BackgroundColor.Value {
+					raw = " " + raw[len(matches[1]):]
+				} else {
+					raw = raw[len(matches[0]):]
+				}
+				// end JM edit
 			} else if matches := colorForeRe.FindStringSubmatch(raw); len(matches) != 0 {
 				chunk.ForegroundColor = ParseColor(matches[1])
 				raw = raw[len(matches[0]):]
