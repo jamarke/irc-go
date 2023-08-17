@@ -1,3 +1,3 @@
-module github.com/ergochat/irc-go
+module github.com/jamarke/irc-go
 
 go 1.15
