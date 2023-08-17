@@ -1,0 +1,4 @@
+github.com/ergochat/irc-go v0.4.0 h1:0YibCKfAAtwxQdNjLQd9xpIEPisLcJ45f8FNsMHAuZc=
+github.com/ergochat/irc-go v0.4.0/go.mod h1:2vi7KNpIPWnReB5hmLpl92eMywQvuIeIIGdt/FQCph0=
+golang.org/x/net v0.14.0 h1:BONx9s002vGdD9umnlX1Po8vOZmrgH34qlHcD1MfK14=
+golang.org/x/net v0.14.0/go.mod h1:PpSgVXXLK0OxS0F31C1/tv6XNguvCrnXIDrFMspZIUI=
