@@ -126,7 +126,7 @@ func Split(raw string) (result []FormattedSubstring) {
 				// JM edit
 				// if back and fore colors are the same, replace the next character with a space
 				if chunk.ForegroundColor.Value == chunk.BackgroundColor.Value {
-					raw = " " + raw[len(matches[1]):]
+					raw = " " + raw[len(matches[0])+1:]
 				} else {
 					raw = raw[len(matches[0]):]
 				}
